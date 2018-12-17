@@ -1,15 +1,13 @@
-<!DOCTYPE html>
+
 <html> 
 <head>
 <meta charset=utf-8 />
-<title>Converting Temparatures </title>
-<style type="text/css">
-body {margin: 30px;}
-</style> 
+<title>Temp Converter</title>
+
     <script>
         function cToF(celsius) 
             {
-            var num = prompt("Please enter value", "");
+            var num = prompt("Please enter value", " ");
               var cTemp = num;
               var cToFahr = cTemp * 9 / 5 + 32;
               
@@ -18,7 +16,7 @@ body {margin: 30px;}
 
             function fToC(fahrenheit) 
             {
-                var num = prompt("Please enter your name", "");
+                var num = prompt("Please enter your value", " ");
               var fTemp = num;
               var fToCel = (fTemp - 32) * 5 / 9;
                 
@@ -31,10 +29,10 @@ body {margin: 30px;}
 <form>
 <!--Enter Value : <input type="text" id="TempVal" /><br>-->
 
-<input type="button" onClick="cToF()" Value="Celcius To Farenheit" />
-<input type="button" onClick="fToC()" Value="Farenheit To Celcius" />
+<input type="button" onClick="cToF()" Value="C To F" />
+<input type="button" onClick="fToC()" Value="F To C" />
 </form>
-<p>The Result is : <br>
+<p>The Value Is: <br>
 <span id = "result"></span>
 </p>
 </body>
